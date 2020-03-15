@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  {% load admin_urls %}
   <head>
     <meta charset="utf-8">
     <title>Base</title>
@@ -13,7 +14,7 @@
       <div class="navbar-nav">
         {# Django Home Link / Admin Link / Register Link#}
         <a class="navbar-brand" href="{% url 'index' %}">DJANGO</a>
-        <a class="nav-item nav-link" href="{% url 'index' %}">Admin</a>
+        <a class="nav-item nav-link" href="{% url 'admin:index' %}">Admin</a>
         <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
 
         {# Some logic on what to display for last item#}
