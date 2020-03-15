@@ -21,5 +21,6 @@ from basic_users import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
-    path('basic_users/', include('basic_users.urls'))
+    path('basic_users/', include('basic_users.urls')),
+    path('logout/', views.user_logout, name='logout'),
 ]
